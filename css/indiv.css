@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.individual-container {
+    width: 100%;
+    max-width: 393px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #A55924;
+}
+
+/* Header Section (Individual Pages) */
+.page-header {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8A831;
+    border-radius: 0 0 20px 20px;
+}
+
+.page-header .header-back {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.page-header .header-back img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.page-header .header-title {
+    font-size: 22px;
+    font-family: 'Eagle Lake', cursive;
+    color: #3E1F05;
+    align-items: center;
+}
+
+.page-header .header-title span:first-child {
+    font-size: 22px;
+    font-weight: bold;
+    align-items: center;
+}
+
+
+/* Options Section Styling */
+.options-container {
+    padding: 20px;
+    margin: 20px 10px;
+    background-color: #F8A831;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.options-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3E1F05;
+    text-align: center;
+}
+
+.option-card {
+    background-color: #FFF6E5;
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-card input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and text */
+    width: 18px;
+    height: 18px;
+    accent-color: #FFA726; /* Checkbox color */
+}
+
+.option-card label {
+    font-size: 16px;
+    color: #3E1F05;
+    flex-grow: 1;
+}
+
+.option-price {
+    font-size: 16px;
+    color: #3E1F05; /* Match text color */
+    margin-left: 10px; /* Space between text and price */
+    text-align: right;
+    white-space: nowrap; /* Prevent line breaking */
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.image-section img {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Extra Space Styling */
+.extra-space {
+    height: 100px; /* Adjust this value as needed */
+    background-color: #A55924; /* Matches the background color */
+}

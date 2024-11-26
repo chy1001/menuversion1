@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Colombo 92</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="home-header">
+            <div class="header-title">Bar Colombo 92</div>
+            <div class="header-icon">
+                <img src="assets/icons/Menu.svg" alt="Menu Icon">
+            </div>
+        </header>
+
+        <!-- Banner Section -->
+        <div class="banner">
+            <img src="assets/images/Cover.png" alt="Banner Image">
+        </div>
+
+        <!-- Menu Buttons -->
+        <div class="menu">
+            <div class="menu-buttons">
+                <button class="menu-button active" onclick="scrollToSection('panini')">Panini</button>
+                <button class="menu-button" onclick="scrollToSection('appetizers')">Appetizers</button>
+                <button class="menu-button" onclick="scrollToSection('pasta')">Italian Pasta</button>
+                <button class="menu-button" onclick="scrollToSection('beverage')">Beverage</button>
+                <button class="menu-button" onclick="scrollToSection('alcohol')">Alcohol</button>
+            </div>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="cards-container">
+            <!-- Classical Panini Card -->
+            <div id="panini" class="card">
+                <a href="html page/classical.html">
+                    <img src="assets/images/Classical.png" alt="Classical Panini">
+                    <h3 class="card-title">CLASSICAL PANINI</h3>
+                    <p class="card-description">Classical Italian ham or salami with cheese or vegetables</p>
+                </a>
+            </div>
+            <!-- Local Special Panini Card -->
+            <div class="card">
+                <a href="html page/special.html">
+                    <img src="assets/images/Special.png" alt="Local Special Panini">
+                    <h3 class="card-title">LOCAL SPECIAL PANINI</h3>
+                    <p class="card-description">Genova-Style</p>
+                </a>
+            </div>
+            <!-- Top Choices Card -->
+            <div class="card">
+                <a href="html page/topchoice.html">
+                    <img src="assets/images/Classical.png" alt="Top Choices">
+                    <h3 class="card-title">TOP CHOICES</h3>
+                    <p class="card-description">Popular Panini</p>
+                </a>
+            </div>
+            <!-- Appetizers Card -->
+            <div id="appetizers" class="card">
+                <a href="html page/appetizer.html">
+                    <img src="assets/images/Appetizers.png" alt="Appetizers">
+                    <h3 class="card-title">APPETIZERS</h3>
+                    <p class="card-description">A plate of Italian ham or salami with cheese and vegetables</p>
+                </a>
+            </div>
+            <!-- Italian Pasta Card -->
+            <div id="pasta" class="card">
+                <a href="html page/pasta.html">
+                    <img src="assets/images/Pasta.png" alt="Italian Pasta">
+                    <h3 class="card-title">ITALIAN PASTA</h3>
+                    <p class="card-description">Pasta, Lasagna and Chicken Potatoes</p>
+                </a>
+            </div>
+            <!-- Beverage Card -->
+            <div id="beverage" class="card">
+                <a href="html page/beverage.html">
+                    <img src="assets/images/Beverage.png" alt="Beverage">
+                    <h3 class="card-title">BEVERAGE</h3>
+                    <p class="card-description">Coffee and Drinks</p>
+                </a>
+            </div>
+            <!-- Alcohol Card -->
+            <div id="alcohol" class="card">
+                <a href="html page/alcohol.html">
+                    <img src="assets/images/alcohol.png" alt="Alcohol">
+                    <h3 class="card-title">ALCOHOL</h3>
+                    <p class="card-description">Wines, Beers and Cocktails</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-title">Bar Colombo 92</p>
+            <p class="footer-info">Phone: +39 xxxx</p>
+            <p class="footer-info">Email: xxxxx</p>
+            <p class="footer-info">Address: Via XXXX, Genova</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

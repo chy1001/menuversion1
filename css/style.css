@@ -1,0 +1,362 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #A55924;
+    color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 393px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #A55924;
+}
+
+/* Header Section (Homepage) */
+.home-header {
+    width: 100%;
+    height: 99px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A55924;
+}
+
+.home-header .header-title {
+    color: white;
+    font-size: 24px;
+    font-family: 'Eagle Lake', cursive;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.home-header .header-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-header .header-icon img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Header Section (Individual Pages) */
+.page-header {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background-color: #F8A831;
+    border-radius: 0 0 20px 20px;
+}
+
+.page-header .header-back {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.page-header .header-back img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.page-header .header-title {
+    font-size: 22px;
+    font-family: 'Eagle Lake', cursive;
+    color: #3E1F05;
+}
+
+.page-header .header-title span {
+    font-size: 16px;
+    color: #6F6F6F;
+    margin-left: 10px;
+}
+
+/* Banner Image Section */
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Menu Buttons */
+.menu {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 5px;
+    scroll-behavior: smooth;
+}
+
+.menu-buttons::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-button {
+    flex: 1;
+    padding: 8px 12px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+}
+
+.menu-button.active {
+    background-color: white;
+}
+
+.menu-button:hover {
+    background-color: #E0E0E0;
+}
+
+/* Cards Section */
+.cards-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card-title {
+    color: #A55924;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-description {
+    color: #757575;
+    font-size: 14px;
+}
+
+/* Fix for Underline on Links in Cards */
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card a:hover {
+    color: #A55924;
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    max-width: 393px;
+    padding: 20px;
+    background-color: #A55924;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Options List Styling */
+.options-container {
+    padding: 20px;
+    margin: 20px 10px;
+    background-color: #F8A831;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.options-list {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.options-list li {
+    font-size: 16px;
+    color: #3E1F05;
+    line-height: 1.8;
+}
+
+/* Image Section Styling */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Specific Styling for Individual Pages */
+.individual-container {
+    width: 100%;
+    max-width: 393px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #A55924;
+}
+
+.page-header {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8A831;
+    border-radius: 0 0 20px 20px;
+}
+
+.page-header .header-back {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.page-header .header-back img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.page-header .header-title {
+    font-size: 22px;
+    font-family: 'Eagle Lake', cursive;
+    color: #3E1F05;
+}
+
+.page-header .header-title span {
+    font-size: 16px;
+    color: #6F6F6F;
+    margin-left: 10px;
+}
+
+/* Options Section Styling */
+.options-container {
+    padding: 20px;
+    margin: 20px 10px;
+    background-color: #F8A831;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.options-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3E1F05;
+    text-align: center;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.options-list li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #3E1F05;
+    line-height: 1.8;
+}
+
+.options-list input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: #3E1F05; /* Customize checkbox color */
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
