@@ -82,46 +82,43 @@
 }
 
 .option-card input[type="checkbox"] {
-    /* Remove browser default styles */
+    /* Reset browser styles */
     appearance: none; 
     -webkit-appearance: none;
 
-    /* Fixed size */
+    /* Fixed size and border */
     width: 18px;
     height: 18px;
-
-    /* Custom border */
     border: 2px solid #FFA726; /* Border color */
-    border-radius: 4px; /* Rounded corners; remove for square */
-    background-color: #FFF6E5; /* Background color when unchecked */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #FFF6E5; /* Background color for unchecked state */
 
-    /* Spacing and layout */
-    margin-right: 10px;
+    /* Spacing and alignment */
+    margin-right: 10px; /* Space between checkbox and text */
     display: inline-block;
-    vertical-align: middle; /* Align vertically in the middle */
+    vertical-align: middle;
 
-    /* Pointer cursor */
+    /* Cursor */
     cursor: pointer;
 }
 
-/* Style when checked */
+/* Style for checked state */
 .option-card input[type="checkbox"]:checked {
-    background-color: #FFA726; /* Background color when checked */
-    border-color: #FFA726; /* Border color when checked */
+    background-color: #FFA726; /* Checked background color */
+    border-color: #FFA726; /* Border matches the background */
     position: relative;
 }
 
-/* Add a checkmark when checked */
+/* Add a checkmark for checked state */
 .option-card input[type="checkbox"]:checked::before {
     content: '✓'; /* Checkmark content */
     color: white; /* Checkmark color */
     font-size: 14px;
     font-weight: bold;
     position: absolute;
-    left: 3px;
-    top: 0px; /* Adjust position of the checkmark */
+    left: 2px;
+    top: -2px; /* Adjust checkmark position */
 }
-
 .option-card label {
     font-size: 16px;
     color: #3E1F05;
