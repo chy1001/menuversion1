@@ -82,6 +82,8 @@
 }
 
 .option-card input[type="checkbox"] {
+    appearance: none; 
+    -webkit-appearance: none;
     margin-right: 10px; /* Space between checkbox and text */
     width: 18px;
     height: 18px;
