@@ -107,11 +107,11 @@ body {
 
 /* Menu Message */
 .menu-message {
-    text-align: center; /* Centers the text */
-    font-size: 16px; /* Adjust the font size */
-    color: #3E1F05; /* Match the color scheme */
-    margin: 10px 0; /* Add spacing above and below */
-    font-family: 'Inter', sans-serif; /* Use your existing font */
+    text-align: center; 
+    font-size: 16px; 
+    color: #F5F5F5; 
+    margin: 10px 0; 
+    font-family: 'Inter', sans-serif; 
 }
 
 /* Menu Buttons */
