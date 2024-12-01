@@ -105,6 +105,15 @@ body {
     display: block;
 }
 
+/* Menu Message */
+.menu-message {
+    text-align: center; /* Centers the text */
+    font-size: 16px; /* Adjust the font size */
+    color: #3E1F05; /* Match the color scheme */
+    margin: 10px 0; /* Add spacing above and below */
+    font-family: 'Inter', sans-serif; /* Use your existing font */
+}
+
 /* Menu Buttons */
 .menu {
     width: 100%;
